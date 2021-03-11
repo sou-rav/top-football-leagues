@@ -11,20 +11,20 @@ const Home = () => {
     useEffect(() => {
         const url = 'https://www.thesportsdb.com/api/v1/json/1/all_leagues.php';
         fetch(url)
-        .then(res => res.json())
-        .then(data => setLeagues(data.leagues))
-    } , [])
+            .then(res => res.json())
+            .then(data => setLeagues(data.leagues))
+    }, [])
     return (
         <div>
             <section className="home-header">
-                <h1>Amusement Madness</h1>
+                <h1>World's top Football leagues</h1>
             </section>
             <section className="home-body">
                 <Container>
                     <Row>
                         {
-                            leagues.slice(0, 15).map( league => <League key={league.idLeague} league={league}></League>)
-                        }           
+                            leagues.slice(0, 15).map(league => <League key={league.idLeague} league={league}></League>)
+                        }
                     </Row>
                 </Container>
             </section>

@@ -1,8 +1,8 @@
 .home-header {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../../img/header-banner-1.jpg);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../../img/header-banner-2.jpg);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   color: #fff;
   padding: 120px 0;
@@ -13,7 +13,7 @@
 }
 .home-body {
   padding-top: 80px;
-  background: #c31432;
+  background: #fd5c63;
 }
 .card {
   margin-bottom: 30px;
@@ -23,7 +23,7 @@
   font-weight: 700;
 }
 .main-btn {
-  background: #c31432;
+  background: #fd5c63;
   border: none;
 }
 .main-btn a {
@@ -37,7 +37,7 @@ img.card-img-top {
   padding-left: 10px;
 }
 .league-summary {
-  background: #c31432;
+  background: #fd5c63;
 
   padding: 30px;
   border-radius: 20px;
@@ -68,7 +68,7 @@ img.card-img-top {
 .social a {
   font-size: 30px;
   padding: 0 20px;
-  color: #c31432;
+  color: #fd5c63;
 }
 .back-home {
   text-align: center;
