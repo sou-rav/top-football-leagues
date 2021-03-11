@@ -4,8 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import NoMatch from './Components/NoMatch/NoMatch';
 import Home from './Components/Home/Home';
@@ -18,18 +17,18 @@ function App() {
     <div>
       <Router>
         <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route to path="/league/:leagueId">
-              <LeagueDetails></LeagueDetails>
-            </Route>
-            <Route path="*">
-              <NoMatch />
-            </Route>
-          </Switch>
-      </Router>  
-      <Footer></Footer> 
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route to path="/league/:leagueId">
+            <LeagueDetails></LeagueDetails>
+          </Route>
+          <Route path="*">
+            <NoMatch />
+          </Route>
+        </Switch>
+      </Router>
+      <Footer></Footer>
     </div>
   );
 }
