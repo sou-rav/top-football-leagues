@@ -22,7 +22,7 @@ import femaleImg from '../../img/female.png';
 const LeagueDetails = () => {
     const { leagueId } = useParams();
     const [league, setLeague] = useState({});
-    // const [image, setImage] = useState(false);
+    const [image, setImage] = useState(false);
     useEffect(() => {
         const url = `https://www.thesportsdb.com/api/v1/json/1/lookupleague.php?id=${leagueId}`;
         fetch(url)
